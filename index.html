@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nguyễn Hoàng Kha</title>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            font-family: 'Source Sans Pro', sans-serif;
+        }
+
+        #header {
+            height: 150px;
+        }
+
+        .header-left {
+            padding-left: 20px;
+            width: 150px;
+        }
+
+        .header-left img {
+            width: 150px;
+            border-radius: 15%;
+            border: 5px solid #90B7D0;
+        }
+
+        .header-right {
+            height: 80px;
+            width: 98%;
+            margin: auto;
+            background-color: #4FA4D8;
+            position: absolute;
+            z-index: -1;
+            top: 57px;
+            color: azure;
+        }
+        .h{            
+            margin: 3px 0 1px 200px;
+        }
+
+        .ho-ten {
+            font-weight: bolder;
+            font-size: 22pt;
+        }
+
+        .nghe-nghiep {
+            margin-top: 5px;
+            font-weight: bold;
+            font-size: 14pt;
+        }
+
+        .body {
+            margin-top: 30px;
+            display: flex;
+            flex-direction: row;
+        }
+        .card {
+            margin-top: 10px;
+            color: #000000;
+            font-weight: 300;
+            font-size: 14pt;
+
+        }
+
+        .card-head {
+            border-radius: 10px;
+            font-size: 16pt;
+            font-weight: 600;
+            text-align: center;
+            color: #0CA4CD;
+            border: 2px solid #0CA4CD;
+            padding: 6px;
+        }
+
+        .card-body {
+            padding: 10px;
+            text-align: justify;
+        }
+
+        .left {
+            width: 40%;
+            background-color: #DBDBDB;
+            padding: 20px;
+        }
+
+        .right{
+            width: 60%;
+            background-color: #F4F4F4;
+            padding: 20px;
+        }
+        .right .card-head{
+            background-color: #0CA4CD;
+            color: white;
+
+        }
+        .list {
+            list-style: none;
+        }
+
+        .list i {
+            color: #0CA4CD;
+            margin-right: 5px;
+        }
+        /* i {
+            width: 16px;
+        } */
+        @media screen and (max-width: 740px){
+            .body {
+                flex-direction: column;
+            }
+            .left, .right{
+                width: 100%;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header">
+        <div class="header-left">
+            <div class="avatar">
+                <img src="./img_avatar.png" alt="avatar">
+            </div>
+        </div>
+        <div class="header-right">
+            <div class="h">
+                <div class="ho-ten">Nguyễn Hoàng Kha</div>
+                <div class="nghe-nghiep">Lập trình viên</div>
+    
+            </div>
+        </div>
+    </div>
+    <div class="body">
+        <!-- Left -->
+        <div class="left">
+            <!-- Thông tin liên hệ -->
+            <div class="card">
+                <div class="card-head">Thông tin liên hệ</div>
+                <ul class="card-body list">
+                    <li><i class="fa fa-calendar-alt"></i> 05/08/1999</li>
+                    <li><i class="fa fa-user"></i> Nam</li>
+                    <li><i class="fa fa-phone-alt"></i> 0926291178</li>
+                    <li><i class="fa fa-envelope-open"></i> Bkit9x@gmail.com</li>
+                    <li><i class="fas fa-map-marker-alt"></i> An Khánh, Châu Thành, Đồng Tháp</li>
+                    <li><i class="fas fa-globe"></i> Fb.me/kha1999</li>
+                </ul>
+            </div>
+
+            <!-- MỤC TIÊU NGHỀ NGHIỆP -->
+            <div class="card">
+                <div class="card-head">MỤC TIÊU NGHỀ NGHIỆP</div>
+                <div class="card-body list">
+                    Áp dụng những kinh nghiệm về kỹ năng bán hàng và sự hiểu biết về thị trường để trở thành một lập trình viên chuyên nghiệp, mang đến nhiều giá trị cho khách hàng. Từ đó giúp Công ty tăng số lượng
+                    khách hàng và mở rộng tập khách hàng.
+                </div>
+            </div>
+
+            <!-- KỸ NĂNG -->
+            <div class="card">
+                <div class="card-head">KỸ NĂNG</div>
+                <ul class="card-body list">
+                    <li><i class="fas fa-paperclip"></i> Lập trình Web (PHP)</li>
+                    <li><i class="fas fa-paperclip"></i> Lập trình Android (Java)</li>
+                    <li><i class="fas fa-paperclip"></i> Tin học văn phòng</li>
+                </ul>
+            </div>
+
+            <!-- SỞ THÍCH -->
+            <div class="card">
+                <div class="card-head">SỞ THÍCH</div>
+                <div class="card-body list">
+                    Đọc sách, nghe nhạc,...
+                </div>
+            </div>
+        </div>
+
+        <!-- Right -->
+        <div class="right">
+            <!-- HỌC VẤN -->
+            <div class="card">
+                <div class="card-head">HỌC VẤN</div>
+                <ul class="card-body list">
+                    <li><i class="fas fa-graduation-cap"></i> Đại Học Sư Phạm Kỹ Thuật Vĩnh Long</li>
+                    <li><i class="fas fa-satellite-dish"></i> Truyền thông & Mạng máy tính</li>
+                    <li><i class="fa fa-clock"></i> 2017 - 2021</li>
+                </ul>
+            </div>
+
+            <!-- KINH NGHIỆM -->
+            <div class="card">
+                <div class="card-head">KINH NGHIỆM</div>
+                <ul class="card-body list">
+                    <li><i class="fas fa-code"></i> Thực tập sinh tại Nhất Tâm Soft (3 tháng)</li>
+                </ul>
+            </div>
+
+            <!-- CHỨNG CHỈ -->
+            <div class="card">
+                <div class="card-head">CHỨNG CHỈ</div>
+                <ul class="card-body list">
+                    <li><i class="fas fa-award"></i> Microsoft Office Specialist (MOS)</li>
+                    <li><i class="fas fa-award"></i> Tiếng Anh A2</li>
+                    <li><i class="fas fa-award"></i> Tin học Văn phòng</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
